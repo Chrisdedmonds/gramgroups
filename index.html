@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		
+		<meta charset="utf-8">
+		<title>GramGroups</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <style> 
+            body {
+                background-image: url("images/times_square_3.jpg");
+                background-size: 100% 400px;
+                background-repeat: no-repeat;
+                background-color: #cccccc;
+            }
+        </style>
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <h3 >#GramGroups</h3>
+                </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="http://instagram.com" target="_blank"><img src="images/logo.gif" height="25px"></a></li>
+                            <li><p>Groups <span id="badge"></span></p></li>
+                            <li id="help" title="Further Information" data-toggle="modal" data-target=".help_modal">Help</li>
+                        </ul>
+                    </div>
+            </div>
+        </nav>
+
+<div id="title_content">
+    <h1>GramGroups</h1>
+</div>
+
+<div id="subtitle">
+    <h5>The quickest way to organize your Instagram list</h5>
+</div>
+
+<div id="download">
+    <h5>Don't have Instagram? Download here:</h5>
+    <ul>
+        <li><a href="https://itunes.apple.com/us/app/instagram/id389801252?mt=8" target="_blank"><img src="images/apple_logo.png" alt="Apple iTunes Store link" height="50px"></a></li>
+        <li><a href="https://play.google.com/store/apps/details?id=com.instagram.android&hl=en" target="_blank"><img src="images/google_logo.png" alt="Google Play store link" height="50px"></a></li>
+    </ul>
+</div>
+
+<div id="group_list_div">
+    
+</div>
+
+<div id="group_member_div">
+    
+</div>
+
+<div id="main_content">
+    
+    <div id="start">
+        <h2>How this site works</h2>
+
+        <h4>This website is designed to help you organize your Instagram list into groups of users. Below, you can create and name new groups, search for Instagram users and media, and add users to your groups. To begin, create a few groups. Then, scroll down to search.</h4>
+
+        <div class="btn-group" role="group" aria-label="create_group">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".create_group_modal">Create a Group</button>
+        </div>
+    </div>
+    
+    <!-- CREATE GROUP MODAL -->    
+    
+    <div class="modal fade create_group_modal" tabindex="-1" role="dialog" aria-labelledby="Create_Group_Modal">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+
+                <div class="small_modal">
+                    <h3>New Group</h3>
+                        <form class="form-actions" id="new_group_form">
+                            <h5>Please enter a name for this group:</h5>
+                            <input type="text" class="form-control" placeholder="" id="group_name" value="" />
+                            <br />
+                            <button class="btn btn-primary" type="submit">Submit</button>
+                            <button type="button"class="btn" data-dismiss="modal">Close</button>
+                        </form>
+                </div>
+
+            </div>
+        </div>
+    </div>       
+        
+    <!-- VIEW RECENT MODAL -->
+
+    <div class="modal fade view_recent_modal" tabindex="-1" role="dialog" aria-labelledby="View_Recent_Label">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div id="view_recent_modal">
+                       <h1>Recent Posts</h1>
+                        <div id="view_recent_windowpane">
+                            
+
+                        </div>
+                        <button type="button" class="btn" data-dismiss="modal">Close</button>    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- ADD TO GROUP MODAL -->
+    
+    <div class="modal fade add_to_group_modal" tabindex="-1" role="dialog" aria-labelledby="Add_To_Group_Label">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="small_modal">
+                    <h1>Add to Group</h1>
+                    <ul class="list-group" id="add_to_group_modal">
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+    <!-- VIEW GROUP MODAL -->
+
+    <div class="modal fade view_group_modal" tabindex="-1" role="dialog" aria-labelledby="View_Group_Label">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="small_modal">
+                    <h1 id="group_title"></h1>
+                    <ul class="list-group" id="view_group_modal">
+                        
+                        
+                    </ul>
+                    <button type="button"class="btn" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- EDIT NAME MODAL -->
+
+    <div class="modal fade edit_modal" tabindex="-1" role="dialog" aria-labelledby="Edit_Label">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="small_modal">
+                   <h2>Edit group name:</h2>
+                    <div id="edit_modal_content">
+                        
+
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+
+    <!-- HELP MODAL -->
+
+    <div class="modal fade help_modal" tabindex="-1" role="dialog" aria-labelledby="Help_Label">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div id="help_modal">
+                    <h1>Help</h1>
+                        <div id="">                            
+                            <h3>Further Information</h3>
+                                <p>This website was built using the <a href="https://instagram.com/developer/" target="_blank">Instagram API</a>. It is intended to be a tool to allow users to organize Instagram accounts into groups. Groups can be created and named by the user. Search functionality is provided so that users can find specific accounts, or discover media of interest.</p>
+                            <h3>Search</h3>
+                                <p>There are four search functions offered on this site: username search, popular media, media tags, and location. These are all <i>independent</i> search functions meaning they are not intended to be used at the same time but rather for individual searches. The <b>Username Search</b> enables the ability to find specific Instagram accounts when a username is known. Search results will include the accounts with the closest match to the search terms provided. Clicking the "View" button under <b>Popular Media</b> will return the current top trending posts on Instagram. With <b>Tags Search</b>, media can be searched by the "tags" or subjects linked to media posts. Finally, <b>Location Search</b> can be used to view media that has been posted from a certain geographic area.</p>
+                            <h3>Manage Groups</h3>
+                                <p>This site provides functionality to create and manage groups. New groups can be added with the <b>Create a Group</b> button. Users can be added to groups with the <b>Add to Group</b> buttons that appear in the user and media search results. Once groups have been created, they are always visible on the left side of the page, and they can be viewed and managed with the <img src="images/eye_icon_2.png" height="14px"> <b>View Group</b>, <img src="images/gear_icon.png" height="15px"> <b>Edit Name</b>, and <img src="images/delete_icon_2.png" height="15px"> <b>Delete Group</b> icons.</p>
+
+                        </div>
+                    <button type="button" class="btn" data-dismiss="modal">Close</button>    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="username_search">
+        
+        <h1>Search users</h1>
+        <h4 id="username_search_text">Use this bar to search for a specific Instagram user by their username.</h4>
+
+		<form id="username_search_form">
+      		
+            <input type="text" class="form-control" placeholder="Username" id="username_query" value="" />
+      		<br />
+        	<input class="btn btn-primary" type="submit" value="Search" />
+
+    	</form>
+
+    	<div id="search_results">
+    		<div id="search_review"></div>    
+            <ul class="list-group" id="search_results_list">
+    		</ul>
+    	</div>
+
+    </div>
+
+    <div id="media_search">
+        
+        <h1>Search media</h1>
+        <h4>Below, you can view popular media with the "View" button, search for media by specific tag using the "Tags Search" bar, or search for media posted in a particular location with the "Location Search" bar.</h4>
+         <form class="media_search_form" id="search_bar_3">
+            <h3>Popular Media</h3>
+            <input class="btn btn-primary" type="submit" value="View" />
+        </form>
+
+    	<form class="media_search_form" id="search_bar_2">
+            <h3>Tags Search</h3>
+    		<input type="text" class="form-control" placeholder='e.g. "Columbia" or "fishing" ' id="tag_query" value="" />
+    		<br />
+    		<input class="btn btn-primary" type="submit" value="Search" />
+    	</form>
+    	
+        <form class="media_search_form" id="search_bar_5">
+            <h3>Location Search</h3>
+            <input type="text" class="form-control" placeholder='e.g. "San Diego, CA" ' id="loc_query" value="" />
+            <br />
+            <input class="btn btn-primary" type="submit" value="Search" />
+        </form>
+
+        <div id="search_results_2">
+            <div id="media_search_review"></div>
+            <ul class="list-group" id="search_results_list_2">
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+        
+        <script type="text/javascript" src="js/jquery-min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/date.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="js/bootstrap-min.js"></script>
+        <script type="text/javascript" src="js/moment.js"></script>
+        <script type="text/javascript">
+            var groupArray = [];
+            var groupNumb = 0;
+
+            function updateBadge(){
+                var count = groupArray.length;
+                document.getElementById("badge").innerHTML = '<span class="badge">'+ count +'</span>';
+                console.log(count);
+            }
+
+            function updateGroupList(){
+                if (groupArray.length===0){
+                    document.getElementById('group_list_div').innerHTML = '';
+                } else {                
+                    document.getElementById('group_list_div').innerHTML = '';
+                    for(var f = 0; f < groupArray.length;f++)
+                    {
+                        $('#group_list_div').append('<li class="list-group-item">'+ groupArray[f].name +'<span class="badge">'+ groupArray[f].members.length +'</span><img src="images/eye_icon_2.png" id="view_group" title="View group" data-toggle="modal" data-target=".view_group_modal" onClick="viewGroup('+f+')" height="13px"><img src="images/gear_icon.png" id="edit_name" title="Edit group name" height="13px" onClick="editNameForm('+f+')"><img src="images/delete_icon_2.png" height="20px" id="delete_group" title="Delete group" onClick="deleteThis('+f+')" ></li>');
+                    }
+
+                }
+                    groupNumb++;
+                };
+            
+            updateBadge();
+            updateGroupList();
+        </script>
+        
+	</body>
+</html>

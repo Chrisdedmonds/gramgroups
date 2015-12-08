@@ -1,0 +1,348 @@
+.navbar-header h3 {
+	position: relative;
+	top: -7px;
+	color: #F2F2F2;
+}
+
+#navbar ul li p {
+	position: relative;
+	top: 17px;
+	color: #F2F2F2;
+}
+
+#help {
+	position: relative;
+	top: 16px;
+	left: 13px;
+	color: #F2F2F2;
+	padding: 3px;
+}
+
+#help:hover {
+	border: 1px solid #F2F2F2;
+	border-radius: 5px;
+}
+
+#help_modal {
+	margin: 25px;
+}
+
+#help_modal p {
+	text-indent: 25px;
+}
+
+#title_content {
+	margin-top: 75px;
+	width: 340px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#title_content h1 {
+	color: #F2F2F2;
+	font-size: 400%;
+}
+
+#subtitle {
+	width: 315px;
+	margin-right: auto;
+	margin-left: auto;
+	color: #F2F2F2;
+}
+
+#download {
+	color: #F2F2F2;
+	height: 200px;
+	width: 350px;
+	position: absolute;
+	right: 0px;
+	margin-top: 125px;
+}
+
+#download ul {
+	list-style: none;
+	position: relative;
+	left: -40px;
+}
+
+#download li {
+	display: inline;
+}
+
+#download img {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#main_content {
+	position: relative;
+	top: 219px;
+	width: 750px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #F2F2F2;
+}
+
+#start {
+	position: relative;
+	top: 20px;
+	width: 650px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#start h2 {
+	margin-bottom: 20px;
+}
+
+#start h4 {
+	text-indent: 30px;
+}
+
+#start button {
+	position: relative;
+	top: -10px;
+	left: 500px;
+	margin-bottom: 50px;
+}
+
+#username_search {
+	width: 650px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#username_search #username_search_text {
+	margin-top: 30px;
+	text-indent: 30px;
+}
+
+#username_search_form {
+	margin-top: 40px;
+	width:300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#search_results {
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 25px;
+}
+
+#search_results_list button {
+	float:right;
+	position: relative;
+	top: 60px;
+	margin-right: 10px;
+}
+
+#search_results_list h3 {
+	position: relative;
+	top: -15px;
+}
+
+#media_search {
+	width: 650px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#media_search h1 {
+	padding-top: 20px;
+}
+
+#media_search h4 {
+	margin-top: 30px;
+	text-indent: 30px;
+}
+
+.media_search_form {
+	width: 200px;
+	display: inline-block;
+	margin: 0 5px;
+	margin-top: 20px;
+}
+
+#search_bar_3 h3 {
+	position: relative;
+	top: -55px;
+}
+
+.small_modal {
+	width: 250px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 25px;
+}
+
+#add_to_group_modal #add_user {
+	float: right;
+	position: relative;
+	bottom: 7px;
+	right: -7px;
+}
+
+#add_to_group_modal #add_new {
+	float: right;
+	position: relative;
+	bottom: 7px;
+	right: -7px;
+}
+
+#add_to_group_modal #close_add {
+	margin-top: 15px;
+}
+
+#add_to_group_modal #add_media {
+	float: right;
+	position: relative;
+	bottom: 7px;
+	right: -7px;
+}
+
+#add_to_group_modal #add_media_new {
+	float: right;
+	position: relative;
+	bottom: 7px;
+	right: -7px;	
+}
+
+#add_to_group_modal #close_add_media {
+	margin-top: 15px;	
+}
+
+#close_edit {
+	position: relative;
+	left: 10px;
+}
+
+#groups_content {
+	position: relative;
+	top: 30px;
+	width: 900px;
+	height: 900px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #F2F2F2;
+}
+
+#group_list_div {
+	position: fixed;
+	width: 250px;
+	top: 75px;
+}
+
+#group_list_div #view_group {
+	position: relative;
+	left: 7px;
+}
+
+#group_list_div #edit_name {
+	position: relative;
+	left: 9px;
+}
+
+#group_list_div #delete_group {
+	position: relative;
+	left: 9px;
+}
+
+#group_member_div {
+	position: fixed;
+	width:250px;
+	top: 75px;
+	right:0;
+	z-index: 10;
+}
+
+#search_review {
+	width: 275px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#search_results_2 {
+	width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 25px;
+	padding-top: 25px;
+	clear: left;
+}
+
+#search_results_list_2 {
+	list-style: none;
+}
+
+#search_results_2 button {
+	float: right;
+	position: relative;
+	top: -3px;
+}
+
+#view_recent_modal {
+	margin: 20px;
+}
+
+#view_recent_windowpane {
+	width: 850px;
+}
+
+#view_recent_windowpane h3 {
+	width:400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.thumbnails {
+	height: 500px;
+	width: 260px;
+	display: inline-block;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	margin: 10px;
+	padding: 5px;
+}
+
+.thumbnails .caption {
+	height: 230px;
+	word-wrap: break-word;
+	overflow-y: auto; 
+}
+
+.item {
+	width: 430px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px solid #ccc;
+	border-radius: 15px;
+	padding: 7px;
+}
+
+.item img {
+	width: 400px;
+}
+
+.item #like {
+	height:15px;
+	width: 15px;
+}
+
+.item p {
+	width: 400px;
+	word-wrap: break-word;
+}
+
+#footer {
+	clear: left;
+	margin-bottom: 600px;
+}
+
+.create_group_modal {
+	position: relative;
+	top: 200px;
+}
